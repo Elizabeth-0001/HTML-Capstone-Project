@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my capstone web development project">
+    <meta name="author" content="Elizabeth">
+    <title>My Capstone Project</title>
+    <style>
+        body{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-----Consistent header across every page----->
+    <header>
+        <h1>Queen Elizabeth Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html"><strong>Contact</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-----Consistent main heading hierachy across every page----->
+    <main>
+        <article>
+            <header>
+                <h2>Contact me</h2>
+            </header>
+
+            <!-----A working contact/feedback form with validations----->
+        <section>
+            <h3>Feedback form</h3>
+            <p>Please provide the following details:</p>
+            <form action="/submit" method="POST">
+            <fieldset>
+                <legend>Your Personal Details</legend>
+                <label for="name">Full name: </label>
+                <input type="text" id="name" name="fullname" placeholder="Eloide"><br><br>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="gift@example.com" title="please fill out this field" reqiured><br><br>
+                <label for="number">Phone number: </label>
+                <input type="tel" id="number" name="phone number" min="11"><br><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" ><br><br>
+                <label for="message">Feedback response:
+                </label>
+                <textarea name="message" row="5"></textarea>
+            </fieldset><br>
+            <input type="submit" value="Send message">
+            </form>
+        </section>
+         </article>
+    </main>
+    
+    <!-----A consistent footer across every page----->
+    <footer>
+        <p>&copy; 2026 version of Elizabeth's profile. All rights reserved.</p>
+    </footer>
+</body>
+</html>
